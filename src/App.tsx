@@ -4,6 +4,12 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import ViewMessage from './pages/ViewMessage';
 
+import Tab1 from './pages/Tab1';
+
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import firebaseConfig from './firebaseConfig';
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -35,6 +41,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.css';
 
 setupIonicReact();
+firebase.initializeApp(firebaseConfig);
 
 const App: React.FC = () => (
   <IonApp>
@@ -45,6 +52,9 @@ const App: React.FC = () => (
         </Route>
         <Route path="/home" exact={true}>
           <Home />
+        </Route>
+        <Route path="/tab">
+          <Tab1 />
         </Route>
         <Route path="/message/:id">
            <ViewMessage />

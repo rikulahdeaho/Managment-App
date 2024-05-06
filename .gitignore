@@ -37,6 +37,8 @@ scripts/e2e/webpackEntryPoints.json
 scripts/build/e2e-generated-tsconfig.json
 *.css.ts
 
+src/firebaseConfig.ts
+
 stats.json
 
 # demo stuff

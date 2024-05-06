@@ -1,0 +1,45 @@
+.login-form {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+.register-link {
+  margin-top: 16px;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.input-field {
+  margin-bottom: 16px;
+}
+
+.error-message {
+  margin-top: 16px;
+}
+
+.form-container {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.login-link {
+  margin-top: 16px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
