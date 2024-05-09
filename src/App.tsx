@@ -1,14 +1,13 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import Login from './pages/Login';
 import Home from './pages/Home';
-import ViewMessage from './pages/ViewMessage';
+import CreateUser from './pages/CreateUser';
+import UpdateUser from './pages/UpdateUser';
 
-import Tab1 from './pages/Tab1';
-
-import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import firebaseConfig from './firebaseConfig';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -39,25 +38,28 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './global.css';
 
 setupIonicReact();
-firebase.initializeApp(firebaseConfig);
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/" exact={true}>
-          <Redirect to="/home" />
+          <Redirect to="/login" />
+        </Route>
+        <Route path="/login" exact={true}>
+          <Login />
         </Route>
         <Route path="/home" exact={true}>
           <Home />
         </Route>
-        <Route path="/tab">
-          <Tab1 />
+        <Route path="/create" exact={true}>
+          <CreateUser />
         </Route>
-        <Route path="/message/:id">
-           <ViewMessage />
+        <Route path="/update/:userId" exact={true}>
+          <UpdateUser />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

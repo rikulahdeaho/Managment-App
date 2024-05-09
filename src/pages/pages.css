@@ -1,45 +1,21 @@
-.login-form {
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-  }
-  
-.register-link {
-  margin-top: 16px;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
-.register-link a {
-  color: #007bff;
-  text-decoration: none;
+.custom-card {
+  width: 95%; 
+  margin-bottom: 20px;
+  --ion-background-color: #ffffff;
 }
 
-.register-link a:hover {
-  text-decoration: underline;
+.input-text {
+  --ion-color-base: #ffffff;
 }
 
-.input-field {
-  margin-bottom: 16px;
-}
-
-.error-message {
-  margin-top: 16px;
-}
-
-.form-container {
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
-.login-link {
-  margin-top: 16px;
-}
-
-.login-link a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.login-link a:hover {
-  text-decoration: underline;
+.update-button,
+.delete-button {
+  margin-top: 10px;
 }

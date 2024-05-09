@@ -1,0 +1,11 @@
+:root {
+    --ion-background-color: #fbfbfb;
+}
+
+.input-text {
+    --ion-color-base: #ffffff;
+}
+
+.card-white {
+    --ion-background-color: #ffffff;
+}
