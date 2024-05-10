@@ -22,7 +22,7 @@ const CreateUser: React.FC = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage style={{ padding: "15px" }}>
       <IonContent>
         <IonGrid>
           <IonRow>

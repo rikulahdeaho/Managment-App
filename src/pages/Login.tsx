@@ -13,7 +13,7 @@ const Login: React.FC = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage style={{ padding: "15px" }}>
       <IonContent>
         <IonInput
           type="email"

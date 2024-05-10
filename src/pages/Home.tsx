@@ -44,7 +44,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <IonPage>
+    <IonPage style={{ padding: "15px" }}>
       <IonContent>
         <h1>Users</h1>
         <IonButton onClick={handleCreateUser}>Create User</IonButton>

@@ -43,7 +43,7 @@ const UpdateUser: React.FC = () => {
     };
   
     return (
-      <IonPage>
+      <IonPage style={{ padding: "15px" }}>
       <IonContent>
         <IonGrid>
           <IonRow>
